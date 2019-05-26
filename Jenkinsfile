@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image "node:10.15.3-stretch"
-      args "--name portfolio --network nginx -v /var/www/josecaceres.info/portfolio/dist:/var/jenkins_home/workspace/portfolio/dist"
+      args "--name portfolio --network nginx -v /var/www/portafolio.josecaceres.info/portfolio/dist:/var/jenkins_home/workspace/portfolio/dist"
     }
   }
   stages {
